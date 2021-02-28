@@ -1,5 +1,4 @@
 import React from 'react';
-import squares from '../list';
 
 const Square = (props) => {
   return (

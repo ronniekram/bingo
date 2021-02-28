@@ -8,7 +8,7 @@ const Board = () => {
   gameSquares.splice(12, 0, "FREE")
   const squareList = () => {
     return gameSquares.map(sq => {
-      return <Square text={sq} />
+      return <Square text={sq} key={sq} />
     })
   }
   return (
