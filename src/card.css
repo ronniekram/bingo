@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 4em auto 0;
+  overflow: hidden;
+}
+
+.title {
+  background: #6f72ab;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 15px;
+  color: white;
+  border: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 20px 15px;
+  grid-column: span 5;
+  text-align: center;
+}
+
+.bingo-card {
+  background-color: #00abde;
+  padding: 10px;
+  display: grid;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  grid-template-rows: repeat(5, 110px);
+	grid-template-columns: repeat(5, 1fr);
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.bingo-card-item {
+  display: flex;
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 15px;
+  position: absolute;
+  color: black;
+  left: 0;
+  top: -19px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bingo-card-checkbox {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.main-content {
+		max-width: none;
+		margin: 0;
+	}
+	.title {
+		/* font: 50px/0.9 "Amatic SC", cursive; */
+		padding: 20px;
+	}
+	.bingo-card {
+		grid-template-rows: repeat(24, auto);
+		grid-template-columns: auto;
+		margin: 1em;
+	}
+	.bingo-card-item {
+		justify-content: flex-start;
+		padding: 15px 15px 15px 40px;
+		text-align: left;
+		/* &:after {
+			content: "";
+			opacity: 0;
+		}
+		&:nth-child(13) {
+			display: none;
+		} */
+	}
+	.bingo-card-checkbox {
+		display: inline;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 10px;
+		border: 2px dashed;
+	}
+}

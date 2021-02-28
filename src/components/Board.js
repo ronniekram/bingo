@@ -1,4 +1,5 @@
 import React from 'react';
+import Square from './Square';
 import squares from '../list';
 
 const Board = () => {
@@ -11,11 +12,12 @@ const Board = () => {
   return (
     <div className="main-content">
       <div className="title">
-        <span>AAQ BINGO</span>
+        <span> // AAQ BINGO // </span>
       </div>
-
       <div className="bingo-card">
-        
+      <div className="bingo-card-item">
+        <Square />
+      </div>
       </div>
     </div>
   )
