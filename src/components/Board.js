@@ -19,13 +19,13 @@ const Board = () => {
   }
   return (
     <div className="main-content">
+      <button className="refresh-button" onClick={() => window.location.reload(false)}>New Card!</button>
       <div className="title">
         <span> // AAQ BINGO // </span>
       </div>
       <div className="bingo-card">
         {squareList()}
       </div>
-      <button className="refresh-button" onClick={() => window.location.reload(false)}>New Card!</button>
     </div>
   )
 }
