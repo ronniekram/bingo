@@ -5,39 +5,19 @@ import squares from '../list';
 
 const Board = () => {
   let gameSquares = _.sampleSize(squares, 24)
-  gameSquares.splice(13, 0, "FREE")
+  gameSquares.splice(12, 0, "FREE")
+  const squareList = () => {
+    return gameSquares.map(sq => {
+      return <Square text={sq} />
+    })
+  }
   return (
     <div className="main-content">
       <div className="title">
         <span> // AAQ BINGO // </span>
       </div>
       <div className="bingo-card">
-        {console.log(gameSquares)}
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
+        {squareList()}
       </div>
     </div>
   )

@@ -1,11 +1,13 @@
 import React from 'react';
 import squares from '../list';
 
-const Square = () => {
+const Square = (props) => {
   return (
     <div className="bingo-card-item">
-      I am a bingo square.
-      <span className="bingo-card-checkbox"> I am a bingo checkbox.</span>
+      {props.text}
+      <span className="bingo-card-checkbox">
+        {props.text}
+      </span>
   </div>
   )
 }
