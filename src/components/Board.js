@@ -8,7 +8,17 @@ const Board = () => {
     };
   };
 
-  return <div>{list()}</div>
+  return (
+    <div className="main-content">
+      <div className="title">
+        <span>AAQ BINGO</span>
+      </div>
+
+      <div className="bingo-card">
+        
+      </div>
+    </div>
+  )
 }
 
 export default Board;
