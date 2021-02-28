@@ -46,10 +46,11 @@ body {
   background: #f7f7f7;
   border-radius: 5px;
   padding: 15px;
+  margin: 5px;
   position: absolute;
   color: black;
   left: 0;
-  top: -19px;
+  top: -5px;
   align-items: center;
   text-align: center;
   justify-content: center;
