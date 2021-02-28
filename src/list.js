@@ -1,7 +1,7 @@
 let squares = ["the tests are wrong.",
 "i already tried that. didn't work.",
 "never set up local env",
-"tests not passing but code is right",
+"my tests don't pass but my code is right",
 "didn't save before running tests",
 "that didn't work *changes all code back*",
 "asks for project help",

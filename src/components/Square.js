@@ -1,8 +1,9 @@
 import React from 'react';
 
 const Square = (props) => {
+
   return (
-    <div className="bingo-card__item">
+    <div className={props.cssClass}>
       {props.text}
       <span className="bingo-card__checkbox">
         {/* {props.text} */}

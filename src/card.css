@@ -4,7 +4,7 @@
 
 body {
   background: #f7f7f7;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'DotGothic16', sans-serif;
 }
 
 .main-content {
@@ -39,9 +39,28 @@ body {
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.bingo-card-item {
+.free-square {
+  display: flex;
+  background: #92c7d7;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px;
+  position: absolute;
+  color: black;
+  left: 0;
+  /* to8fcddfp: -5px; */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  font-size: 26px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bingo-card__item {
   display: flex;
   background: #92c7d7;
   border-radius: 5px;
@@ -56,9 +75,10 @@ body {
   justify-content: center;
   position: relative;
   font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.bingo-card-checkbox {
+.bingo-card__checkbox {
   display: none;
 }
 
@@ -121,6 +141,7 @@ body {
     padding: 15px 15px 15px 40px;
     text-align: left;
     background: #92c7d7;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 12px;
   }
   .bingo-card__item:after {
@@ -137,8 +158,8 @@ body {
     inline-size: fit-content(20px);
     width: 20px;
     height: 20px;
-    left: 10px;
-    border: 2px solid black;
+    left: 40px;
+    border: 1px solid black;
     font-size: 12px;
   }
 }

@@ -4,11 +4,19 @@ import Square from './Square';
 import squares from '../list';
 
 const Board = () => {
+  const freeStyle = {
+    fontSize: '16px'
+  };
+
   let gameSquares = _.sampleSize(squares, 24)
   gameSquares.splice(12, 0, "FREE")
   const squareList = () => {
     return gameSquares.map(sq => {
-      return <Square text={sq} key={sq} />
+      if (sq === "FREE") {
+        console.log(sq)
+      return <Square cssClass="free-square" text={sq} key={sq} />
+      }
+      return <Square cssClass="bingo-card__item" text={sq} key={sq} />
     })
   }
   return (
