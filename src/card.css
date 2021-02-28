@@ -80,14 +80,13 @@ body {
 		justify-content: flex-start;
 		padding: 15px 15px 15px 40px;
 		text-align: left;
-		/* &:after {
+		&:after {
 			content: "";
 			opacity: 0;
 		}
 		&:nth-child(13) {
 			display: none;
-		} */
-    /* display: none; */
+		} 
 	}
 	.bingo-card-checkbox {
 		display: inline;
