@@ -13,7 +13,7 @@ const Square = (props) => {
       {toggled && <img src="https://raw.githubusercontent.com/ronniekram/bingo/main/src/bingo-x.png" alt="Bingo X" className="bingo-x"/>}
       {!toggled && props.text}
       <span className="bingo-card__checkbox">
-        {/* {props.text} */}
+        {/* {!toggled && props.text} */}
       </span>
   </div>
   )

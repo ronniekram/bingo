@@ -123,6 +123,14 @@ body {
     display: none;
   }
 
+  .bingo-x{
+    display: none;
+  }
+
+  /* .bingo-x:after{
+    content: "✔"
+  } */
+
   .bingo-card__checkbox {
     display: inline;
     position: absolute;
@@ -132,5 +140,6 @@ body {
     left: 18px;
     border: 1px solid black;
     font-size: 12px;
+    text-decoration: line-through;
   }
 }
