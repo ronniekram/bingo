@@ -120,6 +120,8 @@ body {
     justify-content: flex-start;
     padding: 15px 15px 15px 40px;
     text-align: left;
+    background: #92c7d7;
+    font-size: 12px;
   }
   .bingo-card__item:after {
     content: "";
@@ -137,5 +139,6 @@ body {
     height: 20px;
     left: 10px;
     border: 2px solid black;
+    font-size: 12px;
   }
 }

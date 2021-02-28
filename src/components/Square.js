@@ -5,7 +5,7 @@ const Square = (props) => {
     <div className="bingo-card__item">
       {props.text}
       <span className="bingo-card__checkbox">
-        {props.text}
+        {/* {props.text} */}
       </span>
   </div>
   )
