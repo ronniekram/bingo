@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Square = (props) => {
 
-  const [toggled, setToggled] = React.useState(false);
+  const [toggled, setToggled] = useState(false);
 
   const toggleClick = () => {
     setToggled(!toggled)

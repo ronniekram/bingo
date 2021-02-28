@@ -88,6 +88,16 @@ body {
   justify-content: center;
 }
 
+.refresh-button {
+  padding: 10px;
+  margin: 10px;
+  background: #81b05c;
+  box-shadow: none;
+  border-radius: 3px;
+  border: 1px solid black;
+  font-size: 16px;
+}
+
 
 @media screen and (max-width: 600px) {
   .main-content {
@@ -108,6 +118,7 @@ body {
   }
 
   .bingo-card__item {
+    /* display: none; */
     justify-content: flex-start;
     padding: 15px 15px 15px 40px;
     text-align: left;
@@ -127,9 +138,10 @@ body {
     display: none;
   }
 
-  /* .bingo-x:after{
+  .bingo-x:after{
+    display: inline;
     content: "✔"
-  } */
+  }
 
   .bingo-card__checkbox {
     display: inline;
@@ -140,6 +152,5 @@ body {
     left: 18px;
     border: 1px solid black;
     font-size: 12px;
-    text-decoration: line-through;
   }
 }

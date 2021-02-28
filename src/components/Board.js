@@ -6,7 +6,9 @@ import squares from '../list';
 const Board = () => {
 
   let gameSquares = _.sampleSize(squares, 24)
+
   gameSquares.splice(12, 0, "FREE")
+
   const squareList = () => {
     return gameSquares.map(sq => {
       if (sq === "FREE") {
@@ -23,6 +25,7 @@ const Board = () => {
       <div className="bingo-card">
         {squareList()}
       </div>
+      <button className="refresh-button" onClick={() => window.location.reload(false)}>New Card!</button>
     </div>
   )
 }
