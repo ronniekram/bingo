@@ -3,8 +3,8 @@ import squares from '../list';
 
 const Board = () => {
   const list = () => {
-    for (let sq in squares) {
-      console.log(sq)
+    for (let squ of squares) {
+      console.log(squ)
     };
   };
 
