@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Square = (props) => {
+  const handleClick = () => {
+
+  }
 
   return (
     <div className={props.cssClass}>
