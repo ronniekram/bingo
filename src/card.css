@@ -107,7 +107,6 @@ body {
   }
 
   .title {
-    font: 50px/0.9 "Amatic SC", cursive;
     padding: 20px;
   }
 
@@ -133,9 +132,10 @@ body {
   .bingo-card__checkbox {
     display: inline;
     position: absolute;
+    inline-size: fit-content(20px);
     width: 20px;
     height: 20px;
     left: 10px;
-    border: 2px dashed #f7d75c;
+    border: 2px solid black;
   }
 }
