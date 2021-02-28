@@ -82,6 +82,12 @@ body {
   display: none;
 }
 
+.bingo-x {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
 
 @media screen and (max-width: 600px) {
   .main-content {
